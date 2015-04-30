@@ -1,0 +1,37 @@
+<h1>Listing filters</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Blur</th>
+      <th>Blueshift</th>
+      <th>Charcoal</th>
+      <th>Oilpaint</th>
+      <th>Sepia</th>
+      <th>Name</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @filters.each do |filter| %>
+      <tr>
+        <td><%= filter.blur %></td>
+        <td><%= filter.blueshift %></td>
+        <td><%= filter.charcoal %></td>
+        <td><%= filter.oilpaint %></td>
+        <td><%= filter.sepia %></td>
+        <td><%= filter.name %></td>
+        <td><%= filter.user %></td>
+        <td><%= link_to 'Show', filter %></td>
+        <td><%= link_to 'Edit', edit_filter_path(filter) %></td>
+        <td><%= link_to 'Destroy', filter, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Filter', new_filter_path %>

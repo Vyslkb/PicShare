@@ -1,0 +1,17 @@
+<h2>Log in</h2>
+
+<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: "form-horizontal" }) do |f| %>
+  <%=f.input :email %>
+
+  <%=f.input :password %>
+ 
+  <%= f.input :remember_me, as: :boolean, inline_label: 'Remember me', label: false %>
+  
+  <p></p>
+
+  <div class="form-group">
+  	<%= f.submit "Log in",class:"btn btn-primary" %>
+<% end %>
+<p></p>
+<%= render "devise/shared/links" %>
+</div>

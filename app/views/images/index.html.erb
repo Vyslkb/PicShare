@@ -1,0 +1,7 @@
+<%= render 'pages/home'%>
+
+<% if user_signed_in?%>
+<div id="images">
+<%= render @images%>
+</div>
+<%end%>

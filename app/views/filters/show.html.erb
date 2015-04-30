@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Blur:</strong>
+  <%= @filter.blur %>
+</p>
+
+<p>
+  <strong>Blueshift:</strong>
+  <%= @filter.blueshift %>
+</p>
+
+<p>
+  <strong>Charcoal:</strong>
+  <%= @filter.charcoal %>
+</p>
+
+<p>
+  <strong>Oilpaint:</strong>
+  <%= @filter.oilpaint %>
+</p>
+
+<p>
+  <strong>Sepia:</strong>
+  <%= @filter.sepia %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @filter.name %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @filter.user %>
+</p>
+
+<%= link_to 'Edit', edit_filter_path(@filter) %> |
+<%= link_to 'Back', filters_path %>

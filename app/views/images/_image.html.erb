@@ -1,0 +1,15 @@
+<div class="box">
+<tr>
+	<%= link_to (image_tag image.photo (:medium)),image %>
+	<p class="description">
+        <%= image.description %>
+        </p>
+        	
+        <p>
+        <%= link_to 'Edit', edit_image_path(image) %></td>
+        </p>
+        <p>
+        <%= link_to 'Destroy', image, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </p>
+      </tr>
+      </div>
